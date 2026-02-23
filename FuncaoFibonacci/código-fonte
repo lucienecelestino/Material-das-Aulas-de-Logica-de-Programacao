@@ -1,0 +1,44 @@
+/*
+    Name: Programa de Fibonacci
+    Author: Luciene Celestino
+    Date: 14/04/25 10:14
+    Description: progama que o usu�rio decide quantos numeros de fibonacci quer ver
+*/
+
+void Fibo(int);
+ 
+int main()
+{
+    int qtdelementos, i;
+    qtdelementos = i = 0;
+    
+    printf("quantos numero da sequencia de Fibonacci, voce deseja ver?");
+    scanf("%d", &qtdelementos);
+    
+    Fibo(qtdelementos);
+}
+ 
+void Fibo(int qtdelementos)
+{
+    int anterior;
+    int proximo;
+    int atual ;
+    int i;
+    
+    atual = 1;
+    anterior = 0;
+    proximo = i = 0;
+    
+    printf("%d", atual);
+   do{
+       
+   proximo = anterior + atual;
+   anterior = atual;
+   atual  = proximo ;
+   printf(" %d ", proximo);    
+   i++;    
+       
+   } while (i < qtdelementos);
+   
+}
+}
